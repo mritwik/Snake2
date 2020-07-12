@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JS GAME</title>
+		<style>
+			#mydiv{
+					width:100px;
+					height: 100px;
+					background-color: aqua;
+					margin: 20px;
+				}
+			#mycanvas{
+				background-image: url("Assets/bg.jpg");
+				border : 20px solid green;
+			}
+			#down {
+			    position:absolute;
+			    transition: .5s ease;
+			    top: 51%;
+			    left: 51%;
+			}
+			#up {
+			    position:absolute;
+			    transition: .5s ease;
+			    top: 45%;
+			    left: 51%;
+			}
+			#left {
+			    position:absolute;
+			    transition: .5s ease;
+			    top: 48%;
+			    left: 45%;
+			}
+			#right {
+			    position:absolute;
+			    transition: .5s ease;
+			    top: 48%;
+			    left: 57%;
+			}
+		</style>
+	</head>
+
+	<body>
+		 <div class="wrapper">
+    		<canvas id ="mycanvas"></canvas>
+    		<button id="left"> <img src="Assets/arrowleft.jpg" width = "30", height="30" /></button>
+    		<button id="down">    <img src="Assets/arrowdown.jpg" width = "30", height="30" /> </button>
+    		<button id="up"> <img src="Assets/arrowup.jpg" width = "30", height="30" /> </button>
+    		<button id="right"> <img src="Assets/arrowright.jpg" width = "30", height="30" /> </button>
+
+  		</div>
+		<script src="snake.js"></script>
+		<script src="pure-swipe.js"></script>
+	</body>
+</html>
